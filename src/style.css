@@ -229,11 +229,49 @@ form, .form-group p {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 100;
 }
 
 .section-head img {
     box-shadow: inset 0 0 2px 2px #000;
+}
+
+.section-head-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/main-img.jpg');
+    font-family: "Great Vibes", cursive;
+    padding: 50px 0;
+    height: calc(100% - 50px);
+    border: 3px solid #000;
+    width: 650px;
+}
+
+.section-head-bg p {
+    color: #fff;
+    word-break: break-all;
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 42px;
+}
+
+.section-head-who {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-head-who span {
+    margin: 0 20px;
+}
+
+.section-head-who span {
+
 }
 
 .section-dear-guest {
@@ -313,8 +351,30 @@ form, .form-group p {
 }
 
 .section-place {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #61674d;
+    padding: 50px 100px;
+}
+
+.section-place-address {
+    font-family: "Tenor Sans", sans-serif;
+    max-width: 200px;
+    text-align: center;
+    color: #e7e7e7;
+}
+
+.section-place-images img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.section-place-images img:not(:last-of-type) {
+    margin-right: 12px;
 }
 
 .section-place-title {
