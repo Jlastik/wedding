@@ -1,0 +1,360 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+body, h1, h2, p {
+    margin: 0;
+}
+
+button {
+    border: none;
+    color: #fff;
+    padding: 14px 60px;
+    cursor: pointer;
+    background-color: #6d1b24;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #5b1119;
+}
+
+
+form {
+    position: relative;
+    z-index: 100;
+    width: 30%;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #61674d;
+    display: flex;
+    flex-direction: column;
+}
+form button {
+    align-self: center;
+}
+
+input {
+    background: transparent;
+    border: 1px solid #61674d;
+    padding: 12px 10px;
+    border-radius: 6px;
+    outline: none;
+    color: #61674d;
+    font-size: 18px;
+}
+
+input:focus {
+    border-color: rgb(94, 113, 157);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #61674d;
+    transition: none;
+    box-shadow: none;
+}
+
+
+input[type=radio], input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form, .form-group p {
+    font-size: 20px;
+}
+
+.form-group-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 22px;
+    margin-bottom: 6px;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.form-group-row label {
+    cursor: pointer;
+    margin-left: 30px;
+    line-height: 1;
+}
+
+.form-group-row label {
+    font-size: 16px;
+}
+
+.custom-check {
+    position: absolute;
+    cursor: pointer;
+    bottom: 2px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.3s;
+    border: 1px solid #61674d;
+}
+
+.custom-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #61674d;
+    border-radius: 50%;
+}
+
+.custom-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-group-row input:checked ~ .custom-check:after {
+    display: block;
+}
+
+.form-group-row input:checked ~ .custom-radio:after {
+    display: block;
+}
+
+.form-group-row .custom-radio:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #61674d;
+}
+
+.form-group-row .custom-check:after {
+    left: 8px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid #61674d;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 1px;
+}
+
+.form-group-row:hover input ~ .custom-check {
+    background-color: rgba(97, 103, 77, 0.22);
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-group-row input:checked ~ .custom-check {
+    background-color: rgba(97, 103, 77, 0.22);
+}
+
+.form-group-row:hover input ~ .custom-radio {
+    background-color: rgba(97, 103, 77, 0.22);
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-group-row input:checked ~ .custom-radio {
+    background-color: rgba(97, 103, 77, 0.22);
+}
+
+.form-accept,
+.form-drink,
+.form-food,
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-accept {
+    margin-top: 10px;
+}
+
+
+.form-drink p,
+.form-food p {
+    margin-bottom: 4px;
+}
+
+.section-head {
+    position: relative;
+    background-color: #6d1b24;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.section-head img {
+    box-shadow: inset 0 0 2px 2px #000;
+}
+
+.section-dear-guest {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-dear-guest-main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 580px;
+    margin-bottom: 150px;
+}
+
+
+.section-dear-guest-main-text-title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    color: #61674d;
+    text-align: center;
+}
+
+.section-dear-guest-main-text-body {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    color: #941924;
+    text-align: center;
+}
+
+.section-dear-guest-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.35;
+}
+
+.section-dear-guest-house-is {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 300px;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #61674d;
+    text-align: right;
+}
+
+.section-dear-guest-cake {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#ring-grape {
+    z-index: 90;
+    position: absolute;
+    top: -330px;
+    left: 0;
+    object-fit: contain;
+    width: 40%;
+}
+
+.section-place {
+    height: 500px;
+    background-color: #61674d;
+}
+
+.section-place-title {
+    text-align: center;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #fff;
+}
+
+.section-feedback {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.section-feedback-title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    color: #61674d;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.section-feedback-subtitle {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #61674d;
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 40px;
+}

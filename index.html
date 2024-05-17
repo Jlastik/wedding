@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marck+Script&family=Tenor+Sans&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite + TS</title>
+</head>
+<body>
+<main>
+    <section class="section-head">
+        <img src="/main-img.jpg" alt=""/>
+    </section>
+    <section class="section-dear-guest">
+        <img id="ring-grape" src="/ring-grape.png" alt=""/>
+        <img class="section-dear-guest-cake" src="/table.png" alt=""/>
+        <p class="section-dear-guest-house-is">Для нас двоих дом - это не место. Это близкие люди, которые нас окружают.
+            И наконец-то мы дома</p>
+        <div class="section-dear-guest-main-text">
+            <img src="/bantik.png" alt="">
+            <p class="section-dear-guest-main-text-title">Дорогой гость!</p>
+            <p class="section-dear-guest-main-text-body">Если ты это читаешь, то тебя ждёт незабываемая, веселая, яркая
+                вечеринка, посвященная нашей свадьбе. Мы нехило потрудились, чтобы это мероприятие было действительно
+                крутым, теперь - твоя очередь, хе-хе ;)</p>
+        </div>
+        <div class="section-dear-guest-bg"></div>
+    </section>
+    <section class="section-place">
+        <h2 class="section-place-title">Место проведения</h2>
+    </section>
+    <section class="section-datetime">
+        <h2 class="section-datetime-title">Место проведения</h2>
+    </section>
+    <section class="section-dress">
+        <h2 class="section-dress-title">Место проведения</h2>
+    </section>
+    <section class="section-wish">
+        <h2 class="section-wish-title">Место проведения</h2>
+    </section>
+    <section class="section-feedback">
+        <h2 class="section-feedback-title">Анкета</h2>
+        <p class="section-feedback-subtitle">Просим подтвердить ваше присутсвие до 31 июля и заполнить анкету
+            ниже.</p>
+        <form id="form">
+            <div class="form-group">
+                <label for="fio">Имя и Фамилия</label>
+                <input required name="ФИО" id="fio" placeholder="Федяев Ибрагим">
+            </div>
+            <div class="form-accept">
+                <div class="form-group-row">
+                    <label for="radio-yes">
+                        Да, с удовольствием!
+                        <input checked required name="Приду" type="radio" id="radio-yes" value="yes"/>
+                        <span class="custom-radio"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="radio-no">
+                        К сожалению, не смогу.
+                        <input required name="Приду" type="radio" id="radio-no" value="no"/>
+                        <span class="custom-radio"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="go-with">С кем придете?</label>
+                <input required name="С кем придете?" id="go-with" placeholder="Наталья Петровна / Один">
+            </div>
+            <div class="form-drink">
+                <p>Что пьете?</p>
+                <div class="form-group-row">
+                    <label for="no-alcohol">
+                        Безалкогольное
+                        <input name="Безалкогольное" type="checkbox" id="no-alcohol"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="red-wine">
+                        Красное винишко
+                        <input name="Красное винишко" type="checkbox" id="red-wine"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="white-wine">
+                        Белое винишко
+                        <input name="Белое винишко" type="checkbox" id="white-wine"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="cocktails">
+                        Коктейльчики
+                        <input name="Коктейльчики" type="checkbox" id="cocktails"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="rom">
+                        Ром
+                        <input name="Ром" type="checkbox" id="rom"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="whisky">
+                        Виски
+                        <input name="Виски" type="checkbox" id="whisky"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+
+                    <label for="vodka-samogon">
+                        Водку или самогон, пожалуйста
+                        <input name="Водку или самогон, пожалуйста" type="checkbox" id="vodka-samogon"/>
+                        <span class="custom-check"></span>
+                    </label>
+
+                </div>
+            </div>
+            <div class="form-food">
+                <p>Предпочтения в еде?</p>
+                <div class="form-group-row">
+                    <label for="meat">
+                        Мясо
+                        <input name="Мясо" type="checkbox" id="meat"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="fish">
+                        Рыба
+                        <input name="Рыба" type="checkbox" id="fish"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+                <div class="form-group-row">
+                    <label for="vegan">
+                        Вегетарианец
+                        <input name="Вегетарианец" type="checkbox" id="vegan"/>
+                        <span class="custom-check"></span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="section-dear-guest-bg"></div>
+    </section>
+</main>
+<!--    <footer>footer</footer>-->
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+
+
+
