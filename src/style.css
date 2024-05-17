@@ -52,6 +52,7 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 form button {
     align-self: center;
 }
@@ -88,7 +89,6 @@ input[type=radio], input[type=checkbox] {
     height: 0;
     width: 0;
 }
-
 
 
 .form-group {
@@ -319,11 +319,22 @@ form, .form-group p {
 
 .section-place-title {
     text-align: center;
-    font-family: "Marck Script", cursive;
+    font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
     color: #fff;
+}
+
+.section-datetime-title,
+.section-dress-title,
+.section-wish-title {
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #61674d;
 }
 
 .section-feedback {
