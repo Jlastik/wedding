@@ -27,9 +27,18 @@ body, h1, h2, p {
     margin: 0;
 }
 
+h2 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #61674d;
+    text-align: center;
+    font-size: 72px;
+}
+
 button {
     border: none;
-    color: #fff;
+    color: #d9d9d9;
     padding: 14px 60px;
     cursor: pointer;
     background-color: #6d1b24;
@@ -45,7 +54,7 @@ form {
     position: relative;
     z-index: 100;
     width: 30%;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Shantell Sans", cursive;
     font-weight: 400;
     font-style: normal;
     color: #61674d;
@@ -90,6 +99,11 @@ input[type=radio], input[type=checkbox] {
     width: 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .form-group {
     display: flex;
@@ -231,10 +245,7 @@ form, .form-group p {
     justify-content: center;
     align-items: center;
     z-index: 100;
-}
 
-.section-head img {
-    box-shadow: inset 0 0 2px 2px #000;
 }
 
 .section-head-bg {
@@ -243,7 +254,7 @@ form, .form-group p {
     justify-content: space-between;
     align-items: center;
     background-size: cover;
-    background-position: -10px 0;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url('/main-img.jpg');
     font-family: "Great Vibes", cursive;
@@ -251,19 +262,20 @@ form, .form-group p {
     height: calc(100% - 50px);
     border: 3px solid #000;
     width: 650px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.37));
 }
 
 
 .section-head-bg p {
-    color: #fff;
+    color: #e0e0e0;
     word-break: break-all;
     white-space: pre-wrap;
     text-align: center;
-    font-size: 42px;
+    font-size: 82px;
 }
 
 .section-head-who {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
     text-align: center;
 }
 
@@ -293,17 +305,8 @@ form, .form-group p {
 }
 
 
-.section-dear-guest-main-text-title {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 72px;
-    color: #61674d;
-    text-align: center;
-}
-
 .section-dear-guest-main-text-body {
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Shantell Sans", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 26px;
@@ -311,7 +314,7 @@ form, .form-group p {
     text-align: center;
 }
 
-.section-dear-guest-bg {
+.section-bg {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -327,11 +330,11 @@ form, .form-group p {
     position: absolute;
     right: 50px;
     top: 50px;
-    width: 300px;
+    width: 400px;
     font-family: "Marck Script", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: 32px;
     color: #61674d;
     text-align: right;
 }
@@ -352,6 +355,7 @@ form, .form-group p {
 }
 
 .section-place {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,7 +364,7 @@ form, .form-group p {
 }
 
 .section-place-address {
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Shantell Sans", cursive;
     max-width: 200px;
     text-align: center;
     color: #e7e7e7;
@@ -379,23 +383,63 @@ form, .form-group p {
 }
 
 .section-place-title {
-    text-align: center;
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px;
-    color: #fff;
+    color: #d9d9d9;
 }
 
-.section-datetime-title,
-.section-dress-title,
-.section-wish-title {
+
+.section-datetime {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.section-datetime-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-datetime-schedule {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.section-datetime-schedule p {
+    width: 100%;
+    font-family: "Shantell Sans", cursive;
+    font-weight: 500;
+    color: #5b1119;
+    font-size: 24px;
     text-align: center;
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px;
-    color: #61674d;
+}
+
+.section-datetime-schedule > p {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.schedule-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.schedule-hr {
+    background-color: #5b1119;
+    height: 1px;
+    margin: 18px 0;
+}
+
+.title-schedule {
+    margin: 0 10px 70px 10px;
+}
+
+.section-datetime-title-bottom {
+    display: flex;
 }
 
 .section-feedback {
@@ -421,7 +465,7 @@ form, .form-group p {
 }
 
 .section-feedback-subtitle {
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Shantell Sans", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -429,4 +473,65 @@ form, .form-group p {
     text-align: center;
     max-width: 500px;
     margin-bottom: 40px;
+}
+
+
+.section-dress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #5b1119;
+    padding: 50px 0;
+}
+
+.section-dress h2  {
+    margin-bottom: 40px;
+    color: #d9d9d9;
+}
+
+.section-dress-subtitle {
+    max-width: 400px;
+    text-align: center;
+    font-family: "Shantell Sans", cursive;
+    font-weight: 300;
+    font-size: 18px;
+    color: #d9d9d9;
+}
+
+.section-dress-subtitle p:first-of-type {
+    margin-bottom: 40px;
+}
+
+.dress-main-container {
+    display: flex;
+}
+
+.dress-item:first-of-type {
+    margin-right: 20px;
+}
+
+.dress-item {
+    margin-top: 50px;
+    max-width: 400px;
+    text-align: center;
+    font-family: "Shantell Sans", cursive;
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d9d9d9;
+}
+
+.dress-item > img {
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #000;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.37));
+}
+
+.dress-item > p:first-of-type {
+    font-family: "Great Vibes", cursive;
+    font-size: 52px;
 }

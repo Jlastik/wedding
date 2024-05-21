@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/rings.svg"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marck+Script&family=Tenor+Sans&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marck+Script&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Tenor+Sans&display=swap"
           rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Приглашение!</title>
@@ -28,27 +30,72 @@
             И наконец-то мы дома</p>
         <div class="section-dear-guest-main-text">
             <img src="/bantik.png" alt="">
-            <p class="section-dear-guest-main-text-title">Дорогой гость!</p>
+            <h2>Дорогой гость!</h2>
             <p class="section-dear-guest-main-text-body">Если ты это читаешь, то тебя ждёт незабываемая, веселая, яркая
                 вечеринка, посвященная нашей свадьбе. Мы нехило потрудились, чтобы это мероприятие было действительно
                 крутым, теперь - твоя очередь, хе-хе ;)</p>
         </div>
-        <div class="section-dear-guest-bg"></div>
+        <div class="section-bg"></div>
     </section>
     <section class="section-place">
         <div class="section-place-images">
-            <img src="/place1.webp" alt="">
+            <img src="/place1.jpg" alt="">
             <img src="/place2.jpg" alt="">
             <img src="/place3.jpg" alt="">
         </div>
         <h2 class="section-place-title">Место проведения</h2>
-        <p class="section-place-address">"СВОЙ ЛОФТ" улица Пушкина, дом колотушкина 7, г. Бали</p>
+        <p class="section-place-address">Усадьба "Вино и время" Морская ул., 78, село Займо-Обрыв</p>
     </section>
     <section class="section-datetime">
-        <h2 class="section-datetime-title">Как мы будем отдыхать?</h2>
+        <div class="section-datetime-title">
+            <h2>Как мы будем отдыхать?</h2>
+            <img src="/people.png" alt="">
+        </div>
+        <div class="section-datetime-schedule">
+            <p>28 августа</p>
+            <div class="schedule-item">
+                <p>14:00<br>Сбор гостей</p>
+            </div>
+            <div class="schedule-hr"></div>
+            <div class="schedule-item">
+                <p>15:30<br>Выездная регистрация</p>
+            </div>
+            <div class="schedule-hr"></div>
+            <div class="schedule-item">
+                <p>17:00<br>Банкет</p>
+            </div>
+            <div class="schedule-hr"></div>
+            <div class="schedule-item">
+                <p>22:00<br>Торт</p>
+            </div>
+            <div class="schedule-hr"></div>
+            <div class="schedule-item">
+                <p>23:00<br>Окончание вечера</p>
+            </div>
+
+        </div>
+        <div class="section-bg"></div>
     </section>
     <section class="section-dress">
         <h2 class="section-dress-title">Дресс код</h2>
+        <div class="section-dress-subtitle">
+            <p>Мы будем рады, еслы вы поддержите цветовую гамму вечера и подберете образ в его стилистика</p>
+            <p>А если не подберете, то для вас наша свадьба проходит по адресу: Село Ям, ул. Крайняя 10ю, кафе "Мамай"</p>
+        </div>
+
+        <div class="dress-main-container">
+            <div class="dress-item">
+                <p>Девушки</p>
+                <p>Чёрный, золото, бежевый, лимонный</p>
+                <img width="400" height="650" src="/woman.jpg" alt="">
+            </div>
+            <div class="dress-item">
+                <p>Мужчины</p>
+                <p>Чёрный, бежевый, белый, лимонный</p>
+                <img width="400" height="650" src="/man.jpg" alt="">
+            </div>
+        </div>
+
     </section>
     <section class="section-wish">
         <h2 class="section-wish-title">Пожелания</h2>
@@ -78,10 +125,10 @@
                     </label>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="go-with">С кем придете?</label>
-                <input required name="С кем придете?" id="go-with" placeholder="Наталья Петровна / Один">
-            </div>
+            <!--            <div class="form-group">-->
+            <!--                <label for="go-with">С кем придете?</label>-->
+            <!--                <input required name="С кем придете?" id="go-with" placeholder="Наталья Петровна / Один">-->
+            <!--            </div>-->
             <div class="form-drink">
                 <p>Что пьете?</p>
                 <div class="form-group-row">
@@ -162,7 +209,7 @@
             </div>
             <button type="submit">Отправить</button>
         </form>
-        <div class="section-dear-guest-bg"></div>
+        <div class="section-bg"></div>
     </section>
 </main>
 <script type="module" src="/src/main.ts"></script>
