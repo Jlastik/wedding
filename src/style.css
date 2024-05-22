@@ -511,6 +511,15 @@ form, .form-group p {
     margin-right: 20px;
 }
 
+.appearance {
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.appearance.show {
+    opacity: 1;
+}
+
 .dress-item {
     margin-top: 50px;
     max-width: 400px;
