@@ -53,7 +53,7 @@ button:hover {
 form {
     position: relative;
     z-index: 100;
-    width: 30%;
+    max-width: 400px;
     font-family: "Shantell Sans", cursive;
     font-weight: 400;
     font-style: normal;
@@ -407,6 +407,7 @@ form, .form-group p {
     display: flex;
     flex-direction: column;
 }
+
 .section-datetime-schedule p {
     width: 100%;
     font-family: "Shantell Sans", cursive;
@@ -449,7 +450,7 @@ form, .form-group p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding: 50px 0;
 }
 
 
@@ -485,7 +486,7 @@ form, .form-group p {
     padding: 50px 0;
 }
 
-.section-dress h2  {
+.section-dress h2 {
     margin-bottom: 40px;
     color: #d9d9d9;
 }
@@ -505,6 +506,7 @@ form, .form-group p {
 
 .dress-main-container {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .dress-item:first-of-type {
@@ -543,4 +545,47 @@ form, .form-group p {
 .dress-item > p:first-of-type {
     font-family: "Great Vibes", cursive;
     font-size: 52px;
+}
+
+.section-wish {
+    position: relative;
+    width: 100%;
+}
+
+.section-wish-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.section-wish-main {
+    max-width: 400px;
+    text-align: center;
+    font-family: "Shantell Sans", cursive;
+}
+
+.section-wish-contact {
+    max-width: 400px;
+    text-align: center;
+    font-family: "Shantell Sans", cursive;
+}
+
+.section-bg-photo {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.bg-photo {
+    position: sticky;
+    inset: 0;
+    width: 100vw;
+    height: 500px;
+    background-image: url("/personal_photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
