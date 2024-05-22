@@ -5,6 +5,12 @@ const env = {
 };
 
 const form = document.querySelector("#form") as HTMLFormElement;
+const dialog = document.getElementById("dialog") as HTMLDivElement;
+const closeBtn = document.getElementById("close-dialog") as HTMLButtonElement;
+
+closeBtn.addEventListener("click", () => {
+  dialog.classList.remove("open");
+});
 
 if (form) {
   form.addEventListener("submit", (e) => {
@@ -16,7 +22,7 @@ if (form) {
       data[key] = value;
     });
     sendToTelegram(data)
-      .then((r) => console.log(r))
+      .then(() => dialog.classList.add("open"))
       .catch((e) => console.log(e));
   });
 }
@@ -74,8 +80,7 @@ const sendToTelegram = async (data: Record<string, string>) => {
     const request = await fetch(
       `https://api.telegram.org/bot${env.token}/sendMessage?chat_id=@wedding_report&parse_mode=HTML&text=${content}`
     );
-    const json = await request.json();
-    console.log(json);
+    return await request.json();
   } catch (e) {
     console.log(e);
   }
