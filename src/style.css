@@ -577,6 +577,7 @@ form, .form-group p {
 }
 
 .section-wish-contact {
+    z-index: 100;
     max-width: 400px;
     text-align: center;
     font-family: "Shantell Sans", cursive;
