@@ -66,7 +66,7 @@ form {
     position: relative;
     z-index: 100;
     max-width: 400px;
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     font-weight: 400;
     font-style: normal;
     color: #61674d;
@@ -385,7 +385,7 @@ section {
 }
 
 .section-place-address {
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     max-width: 200px;
     text-align: center;
     color: #e7e7e7;
@@ -436,7 +436,7 @@ section {
 
 .section-datetime-schedule p {
     width: 100%;
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     font-weight: 500;
     color: #5b1119;
     font-size: 24px;
@@ -492,7 +492,7 @@ section {
 }
 
 .section-feedback-subtitle {
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -520,7 +520,7 @@ section {
 .section-dress-subtitle {
     max-width: 400px;
     text-align: center;
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     font-weight: 300;
     font-size: 18px;
     color: #d9d9d9;
@@ -552,7 +552,7 @@ section {
 .dress-item {
     max-width: 400px;
     text-align: center;
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     font-weight: 300;
     font-size: 18px;
     display: flex;
@@ -590,18 +590,20 @@ section {
 }
 
 .section-wish-main {
-    max-width: 400px;
+    max-width: 480px;
     text-align: center;
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     margin-bottom: 24px;
+    font-size: 20px;
     z-index: 100;
 }
 
 .section-wish-contact {
     z-index: 100;
-    max-width: 400px;
+    font-size: 20px;
+    max-width: 480px;
     text-align: center;
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
 }
 
 .section-bg-photo {
@@ -645,7 +647,7 @@ section {
 .dialog p {
     text-align: center;
     font-size: 18px;
-    font-family: "Shantell Sans", cursive;
+    font-family: "Humana", serif;
     margin-bottom: 20px;
 }
 
