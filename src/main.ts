@@ -55,7 +55,7 @@ window.addEventListener("load", checkForVisibility, false);
 window.addEventListener("scroll", () => {
   checkForVisibility();
 
-  const distance = window.scrollY * 0.5;
+  const distance = Math.ceil(window.scrollY * 0.35);
   const ringGrape = document.querySelector("#ring-grape") as HTMLImageElement;
   const ringHeight = ringGrape.clientHeight;
 
