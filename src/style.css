@@ -307,12 +307,15 @@ section {
 
 .section-dear-guest {
     position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     width: 100%;
-    height: 100vh;
     min-height: 760px;
+}
+
+.section-head-content {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .section-dear-guest-main-text {
@@ -320,7 +323,7 @@ section {
     flex-direction: column;
     align-items: center;
     max-width: 580px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
 }
 
 
@@ -346,16 +349,15 @@ section {
 }
 
 .section-dear-guest-house-is {
-    position: absolute;
-    right: 50px;
-    top: 50px;
     width: 400px;
+    margin: 16px 16px 120px 0;
     font-family: "Marck Script", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
     color: #61674d;
     text-align: right;
+    align-self: flex-end;
 }
 
 .section-dear-guest-cake {
@@ -486,7 +488,7 @@ section {
     color: #61674d;
     text-align: center;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .section-feedback-subtitle {
@@ -522,6 +524,7 @@ section {
     font-weight: 300;
     font-size: 18px;
     color: #d9d9d9;
+    margin-bottom: 24px;
 }
 
 .section-dress-subtitle p:first-of-type {
@@ -590,7 +593,7 @@ section {
     max-width: 400px;
     text-align: center;
     font-family: "Shantell Sans", cursive;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     z-index: 100;
 }
 
@@ -651,7 +654,7 @@ section {
         font-size: 50px;
     }
     .section-head-bg p {
-        font-size: 50px;
+        font-size: 64px;
     }
 
     .section-head-bg {
@@ -661,13 +664,13 @@ section {
 
     .section-dear-guest-house-is {
         font-size: 24px;
-        top: 25px;
-        right: 25px;
+        margin: 8px 8px 60px 0;
         width: 250px;
     }
     .section-dear-guest-main-text {
         margin-bottom: 50px;
         max-width: 300px;
+        font-size: 24px;
     }
 
     .section-dear-guest-main-text-body {
@@ -696,15 +699,39 @@ section {
         padding: 20px 30px;
     }
 
+    .section-datetime-schedule > p {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .section-datetime-schedule p {
+        font-size: 22px;
+    }
+
+    .dress-item > p:first-of-type {
+        font-size: 42px;
+    }
+
+    .section-dress h2 {
+        margin-bottom: 30px;
+    }
+
+    .section-dress {
+        padding: 20px;
+    }
+    .section-wish-container {
+        padding: 20px;
+    }
+
 
 }
 
 @media (max-width: 450px) {
     h2 {
-        font-size: 36px;
+        font-size: 40px;
     }
     .section-head-bg p {
-        font-size: 36px;
+        font-size: 50px;
     }
     .section-dear-guest-house-is {
         font-size: 20px;
@@ -713,8 +740,42 @@ section {
         width: 60%;
     }
 
+    .section-dear-guest-main-text {
+        margin-bottom: 25px;
+
+    }
+
+    .section-dear-guest-main-text-body {
+        font-size: 16px;
+        margin-bottom: 100px;
+    }
+
+    .section-dear-guest {
+        min-height: 600px;
+    }
+
+    .section-dear-guest-cake {
+        width: 200px;
+    }
+
     #ring-grape {
         top: -20%;
         height: 20%;
+    }
+    .section-datetime-schedule p {
+        font-size: 20px;
+    }
+
+    .section-datetime-schedule > p {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+    .dress-item > p:first-of-type {
+        font-size: 34px;
+    }
+
+    .section-dress h2 {
+        margin-bottom: 20px;
     }
 }
