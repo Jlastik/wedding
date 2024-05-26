@@ -739,7 +739,7 @@ section {
         font-size: 20px;
         top: 15px;
         right: 15px;
-        width: 60%;
+        width: 50%;
     }
 
     .section-dear-guest-main-text {
@@ -761,8 +761,8 @@ section {
     }
 
     #ring-grape {
-        top: -20%;
-        height: 20%;
+        top: -40%;
+        height: 40%;
     }
     .section-datetime-schedule p {
         font-size: 20px;
