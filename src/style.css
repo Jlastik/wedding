@@ -9,6 +9,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+    font-family: 'Humana';
+    src: local("Humana"), url("/fonts/humana/verahumana95.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Humana';
+    src: local("Humana"), url("/fonts/humana/verahumana95bold.ttf");
+    font-weight: 600;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -114,6 +126,9 @@ form, .form-group p {
     font-size: 20px;
 }
 
+section {
+    background-color: #fff;
+}
 .form-group-row {
     display: flex;
     align-items: center;
@@ -256,7 +271,7 @@ form, .form-group p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/main-img.jpg');
+    background-image: url('/img/main-img.jpg');
     font-family: "Great Vibes", cursive;
     padding: 50px 0;
     height: calc(100% - 50px);
@@ -310,8 +325,8 @@ form, .form-group p {
 
 
 .section-dear-guest-main-text-body {
-    font-family: "Shantell Sans", cursive;
-    font-weight: 400;
+    font-family: "Humana", serif;
+    font-weight: 600;
     font-style: normal;
     font-size: 26px;
     color: #941924;
@@ -323,11 +338,11 @@ form, .form-group p {
     inset: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/background.png");
+    background-image: url("/img/background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.35;
+    filter: opacity(0.55);
 }
 
 .section-dear-guest-house-is {
@@ -574,6 +589,7 @@ form, .form-group p {
     max-width: 400px;
     text-align: center;
     font-family: "Shantell Sans", cursive;
+    z-index: 100;
 }
 
 .section-wish-contact {
@@ -587,14 +603,16 @@ form, .form-group p {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 300px;
+    z-index: -1;
+    height: 400px;
 }
+
 .bg-photo {
-    position: sticky;
+    position: fixed;
     inset: 0;
     width: 100vw;
-    height: 500px;
-    background-image: url("/personal_photo.jpg");
+    height: 100vh;
+    background-image: url("/img/personal_photo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
