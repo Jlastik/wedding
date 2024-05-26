@@ -55,10 +55,11 @@ window.addEventListener("load", checkForVisibility, false);
 window.addEventListener("scroll", () => {
   checkForVisibility();
 
-  const distance = window.scrollY * 0.4;
-
+  const distance = window.scrollY * 0.5;
   const ringGrape = document.querySelector("#ring-grape") as HTMLImageElement;
-  if (ringGrape && distance < 330) {
+  const ringHeight = ringGrape.clientHeight;
+
+  if (ringGrape && distance < ringHeight) {
     ringGrape.style.transform = `translateY(${distance}px)`;
   }
 });
